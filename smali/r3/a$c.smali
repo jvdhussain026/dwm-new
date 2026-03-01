@@ -1,0 +1,152 @@
+.class final Lr3/a$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lo8/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lr3/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "c"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lo8/d<",
+        "Lu3/c;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field static final a:Lr3/a$c;
+
+.field private static final b:Lo8/c;
+
+.field private static final c:Lo8/c;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lr3/a$c;
+
+    invoke-direct {v0}, Lr3/a$c;-><init>()V
+
+    sput-object v0, Lr3/a$c;->a:Lr3/a$c;
+
+    const-string v0, "eventsDroppedCount"
+
+    invoke-static {v0}, Lo8/c;->a(Ljava/lang/String;)Lo8/c$b;
+
+    move-result-object v0
+
+    invoke-static {}, Lr8/a;->b()Lr8/a;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v2}, Lr8/a;->c(I)Lr8/a;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lr8/a;->a()Lr8/d;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lo8/c$b;->b(Ljava/lang/annotation/Annotation;)Lo8/c$b;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lo8/c$b;->a()Lo8/c;
+
+    move-result-object v0
+
+    sput-object v0, Lr3/a$c;->b:Lo8/c;
+
+    const-string v0, "reason"
+
+    invoke-static {v0}, Lo8/c;->a(Ljava/lang/String;)Lo8/c$b;
+
+    move-result-object v0
+
+    invoke-static {}, Lr8/a;->b()Lr8/a;
+
+    move-result-object v1
+
+    const/4 v2, 0x3
+
+    invoke-virtual {v1, v2}, Lr8/a;->c(I)Lr8/a;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lr8/a;->a()Lr8/d;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lo8/c$b;->b(Ljava/lang/annotation/Annotation;)Lo8/c$b;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lo8/c$b;->a()Lo8/c;
+
+    move-result-object v0
+
+    sput-object v0, Lr3/a$c;->c:Lo8/c;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p1, Lu3/c;
+
+    check-cast p2, Lo8/e;
+
+    invoke-virtual {p0, p1, p2}, Lr3/a$c;->b(Lu3/c;Lo8/e;)V
+
+    return-void
+.end method
+
+.method public b(Lu3/c;Lo8/e;)V
+    .locals 3
+
+    sget-object v0, Lr3/a$c;->b:Lo8/c;
+
+    invoke-virtual {p1}, Lu3/c;->a()J
+
+    move-result-wide v1
+
+    invoke-interface {p2, v0, v1, v2}, Lo8/e;->c(Lo8/c;J)Lo8/e;
+
+    sget-object v0, Lr3/a$c;->c:Lo8/c;
+
+    invoke-virtual {p1}, Lu3/c;->b()Lu3/c$b;
+
+    move-result-object p1
+
+    invoke-interface {p2, v0, p1}, Lo8/e;->f(Lo8/c;Ljava/lang/Object;)Lo8/e;
+
+    return-void
+.end method

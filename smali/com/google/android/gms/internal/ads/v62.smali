@@ -1,0 +1,38 @@
+.class public final synthetic Lcom/google/android/gms/internal/ads/v62;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/tk2;
+
+
+# instance fields
+.field public final synthetic a:Ll4/z2;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ll4/z2;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/v62;->a:Ll4/z2;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/v62;->a:Ll4/z2;
+
+    check-cast p1, Ll4/f0;
+
+    iget v0, v0, Ll4/z2;->o:I
+
+    invoke-interface {p1, v0}, Ll4/f0;->F(I)V
+
+    return-void
+.end method

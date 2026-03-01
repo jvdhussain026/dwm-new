@@ -1,0 +1,68 @@
+.class public Le2/f$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ld2/o;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Le2/f;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ld2/o<",
+        "Ljava/net/URL;",
+        "Ljava/io/InputStream;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ld2/r;)Ld2/n;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ld2/r;",
+            ")",
+            "Ld2/n<",
+            "Ljava/net/URL;",
+            "Ljava/io/InputStream;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Le2/f;
+
+    const-class v1, Ld2/g;
+
+    const-class v2, Ljava/io/InputStream;
+
+    invoke-virtual {p1, v1, v2}, Ld2/r;->d(Ljava/lang/Class;Ljava/lang/Class;)Ld2/n;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Le2/f;-><init>(Ld2/n;)V
+
+    return-object v0
+.end method
